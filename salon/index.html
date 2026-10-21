@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; form-action 'self' mailto: https://wa.me">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#2a0f3a">
+<meta name="description" content="Maison Adjoua, salon de coiffure et de beauté à Cocody, Abidjan. Tresses, tissages, soins, ongles et maquillage. Réservation par WhatsApp.">
+
+<title>Maison Adjoua — Coiffure et beauté à Cocody, Abidjan</title>
+<style>
+:root{--pr:#2a0f3a;--pr2:#3d1a52;--li:#efe3f7;--li2:#e3d1f0;--hi:#d4195a;--so:#ffc83d;--me:#2fb59a;--mu:#6b4f7d;--serif:Georgia,'Noto Serif','DejaVu Serif',serif;--sans:'Segoe UI',system-ui,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:var(--sans);background:var(--li);color:var(--pr);line-height:1.55;overflow-x:clip}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--hi);outline-offset:3px}
+.dk :focus-visible,nav:not(.lt) :focus-visible,#panel :focus-visible,#mb :focus-visible{outline-color:var(--so)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+a{color:inherit}
+h1,h2,h3,.serif{font-family:var(--serif)}
+
+/* Navigation */
+nav{position:fixed;inset:0 0 auto 0;z-index:30;display:flex;align-items:center;gap:26px;padding:16px 5vw;color:var(--li);transition:background .3s,color .3s}
+nav.lt{background:#efe3f7ee;color:var(--pr);backdrop-filter:blur(8px);box-shadow:0 1px 0 #2a0f3a14}
+nav .lg{font-family:var(--serif);font-size:22px;font-weight:700;font-style:italic;text-decoration:none;margin-right:auto}
+nav a:not(.lg):not(.bt){text-decoration:none;font-size:15px}
+nav a:not(.lg):not(.bt):hover{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.bt{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:40px;padding:13px 26px;font-weight:700;font-size:15px;text-decoration:none;cursor:pointer;background:var(--hi);color:#fff;transition:transform .2s,box-shadow .2s,background .2s}
+.bt:hover{transform:translateY(-2px);box-shadow:0 10px 24px #2a0f3a40}
+.bt.so{background:var(--so);color:var(--pr)}
+.bt.ol{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}
+.bt.wa{background:#3ddc84;color:#06240f}
+.bt.sm{padding:10px 20px}
+
+/* Accueil */
+header.hero{position:relative;min-height:100vh;min-height:100svh;background:var(--pr);color:var(--li);display:flex;align-items:center;padding:120px 5vw 80px;overflow:hidden}
+.hero .tx{position:relative;z-index:2;max-width:760px}
+.st{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:30px;background:#ffffff14;font-size:14px;margin-bottom:26px}
+.st i{width:10px;height:10px;border-radius:50%;background:var(--me);box-shadow:0 0 0 0 #2fb59aaa;animation:ping 2s infinite}
+.st.cl i{background:#ff6b8f;animation:none}
+@keyframes ping{to{box-shadow:0 0 0 12px #2fb59a00}}
+h1{font-size:clamp(40px,6vw,84px);line-height:1.04;letter-spacing:-.02em;max-width:17ch;font-weight:700;text-wrap:balance}
+.hero p.lead{font-size:clamp(17px,1.5vw,20px);color:#d8c6e8;max-width:46ch;margin:26px 0 34px}
+.hero .ac{display:flex;gap:14px;flex-wrap:wrap}
+svg.hb{position:absolute;top:78px;right:9vw;height:min(calc(100% - 100px),860px);aspect-ratio:300/880;pointer-events:none;overflow:visible;z-index:1}
+.bl{transform-box:fill-box;transform-origin:center;animation:pop .55s cubic-bezier(.3,1.5,.5,1) both;animation-delay:calc(var(--i)*42ms + .2s)}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+.tail{opacity:0;animation:fade .6s ease 1.8s forwards}
+@keyframes fade{to{opacity:1}}
+
+/* Sections */
+section{padding:96px 5vw;scroll-margin-top:60px}
+.wrap{max-width:1180px;margin:0 auto}
+h2{font-size:clamp(30px,3.8vw,48px);line-height:1.1;letter-spacing:-.01em;margin-bottom:12px}
+.sub{color:var(--mu);max-width:56ch;margin-bottom:38px}
+
+/* Styles */
+.tiles{display:flex;gap:18px;overflow-x:auto;padding:0 0 38px;margin:0 -5vw;padding-inline:5vw;scroll-snap-type:x proximity;scrollbar-width:thin}
+.tile{flex:none;width:186px;scroll-snap-align:start;border:0;border-radius:26px;padding:14px 14px 16px;background:var(--bg);color:var(--pr);text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:2px;transition:transform .25s,box-shadow .25s}
+.tile.lt2{color:var(--li)}
+.tile:nth-child(even){margin-top:30px;margin-bottom:-30px}
+.tile:hover{transform:translateY(-6px) rotate(-1.2deg)}
+.tile svg{width:100%;height:auto;border-radius:16px;margin-bottom:10px;overflow:hidden}
+.tile .tn{font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.2}
+.tile .tp{font-size:13px;opacity:.8}
+.tile .ta{margin-top:10px;align-self:flex-start;font-size:13px;font-weight:700;padding:6px 14px;border-radius:20px;background:var(--pr);color:var(--li);transition:background .2s}
+.tile.lt2 .ta{background:var(--li);color:var(--pr)}
+.tile[aria-pressed=true]{box-shadow:0 0 0 3px var(--pr),0 14px 30px #2a0f3a40}
+.tile[aria-pressed=true] .ta{background:var(--hi);color:#fff}
+
+/* Prestations */
+.rs{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:56px;align-items:start}
+.cat{margin-bottom:34px}
+.cat h3{font-size:24px;margin:0 0 8px 18px}
+.cat ul{list-style:none;display:grid;gap:4px}
+.row{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto 36px;align-items:center;gap:18px;text-align:left;background:transparent;border:0;border-radius:16px;padding:14px 18px;cursor:pointer;transition:background .2s,box-shadow .2s}
+.row:hover{background:var(--li2)}
+.row .nm{font-weight:700;font-size:17px}
+.row .ds{display:block;font-size:14px;color:var(--mu);margin-top:1px}
+.row .pz{text-align:right;white-space:nowrap}
+.row .pz b{display:block;font-size:17px}
+.row .pz small{color:var(--mu);font-size:13px}
+.row .pm{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:20px;font-weight:700;background:var(--li2);transition:background .2s,color .2s,transform .3s}
+.row[aria-pressed=true]{background:#fff;box-shadow:inset 5px 0 0 var(--hi),0 6px 18px #2a0f3a14}
+.row[aria-pressed=true] .pm{background:var(--hi);color:#fff;transform:rotate(360deg)}
+
+/* Panneau de réservation */
+#panel{position:sticky;top:84px;max-height:calc(100vh - 104px);overflow:auto;background:var(--pr);color:var(--li);border-radius:30px;padding:28px 26px 26px;box-shadow:0 24px 50px #2a0f3a38}
+#panel h3{font-size:25px;margin-bottom:14px}
+#sel{list-style:none;display:grid;gap:6px;margin-bottom:16px;max-height:210px;overflow:auto}
+#sel li{display:flex;align-items:center;gap:10px;font-size:15px;background:#ffffff12;border-radius:12px;padding:8px 8px 8px 14px}
+#sel li span{flex:1;min-width:0}
+#sel li em{font-style:normal;color:#d8c6e8;font-size:13px;white-space:nowrap}
+#sel li button{border:0;background:#ffffff1f;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:16px;line-height:1;color:var(--li)}
+#sel li button:hover{background:var(--hi)}
+#emp{color:#d8c6e8;font-size:15px;margin-bottom:16px}
+.tot{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding:14px 0;border-block:1px dashed #ffffff40;margin-bottom:18px}
+.tot b{font-family:var(--serif);font-size:38px;line-height:1;color:var(--so);white-space:nowrap}
+.tot b small{font-size:15px;color:var(--li);font-family:var(--sans);font-weight:400}
+.tot span{font-size:14px;color:#d8c6e8;text-align:right}
+.fd{display:grid;gap:5px;margin-bottom:12px}
+.fd label{font-size:14px;color:#d8c6e8}
+.fd input,.fd select,.fd textarea{width:100%;background:#ffffff14;border:2px solid transparent;border-radius:12px;padding:11px 14px;color:var(--li);color-scheme:dark}
+.fd select option{color:#222}
+.fd input:focus,.fd select:focus,.fd textarea:focus{border-color:var(--so);outline:0}
+.fd textarea{resize:vertical;min-height:62px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#err{min-height:22px;color:#ffb3c9;font-size:14px;margin-bottom:10px}
+#panel .bt{width:100%;margin-top:8px}
+#mb{display:none}
+
+/* Équipe */
+.dk{background:var(--pr);color:var(--li)}
+.dk .sub{color:#d8c6e8}
+.eq{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px;margin-top:10px}
+.mem{display:flex;gap:18px;align-items:flex-start}
+.mono{flex:none;width:76px;height:76px;border-radius:50% 50% 50% 14px;display:grid;place-items:center;font-family:var(--serif);font-size:34px;font-weight:700;font-style:italic;color:var(--pr)}
+.mem h3{font-size:22px}
+.mem p{color:#d8c6e8;font-size:15px}
+.mem small{display:block;color:var(--so);font-size:14px;margin-bottom:4px}
+
+/* Infos */
+.inf{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.hr{width:100%;border-collapse:collapse;font-size:16px}
+.hr td{padding:10px 14px}
+.hr td:last-child{text-align:right}
+.hr tr.today{background:#fff;font-weight:700;box-shadow:inset 5px 0 0 var(--hi)}
+.hr tr.today td:first-child::after{content:' (aujourd\2019hui)';font-weight:400;color:var(--mu)}
+.hr .off td:last-child{color:var(--mu)}
+.ad{font-size:18px;margin-bottom:18px}
+.ad p+p{margin-top:6px}
+.ctl{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+footer{background:var(--pr);color:#d8c6e8;text-align:center;padding:30px 5vw;font-size:14px}
+footer a{color:var(--so)}
+
+@media(max-width:960px){
+ .rs{grid-template-columns:1fr;gap:40px}
+ #panel{position:static}
+ .inf{grid-template-columns:1fr;gap:40px}
+ nav a:not(.lg):not(.bt){display:none}
+ header.hero{padding-top:410px;align-items:flex-end}
+ svg.hb{right:50%;transform:translateX(50%);height:310px}
+ #mb{position:fixed;inset:auto 0 0 0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 5vw calc(12px + env(safe-area-inset-bottom));background:var(--pr);color:var(--li);box-shadow:0 -10px 30px #2a0f3a55;transform:translateY(110%);transition:transform .3s}
+ #mb.on{transform:none}
+ #mb b{font-family:var(--serif);font-size:20px;color:var(--so);display:block;line-height:1.1}
+ #mb span{font-size:13px;color:#d8c6e8}
+ body.hasbar footer{padding-bottom:90px}
+}
+@media(max-width:520px){
+ .row{grid-template-columns:minmax(0,1fr) 36px;row-gap:4px}
+ .row .pz{grid-column:1;grid-row:2;text-align:left}
+ .row .pz b{display:inline;margin-right:8px}
+ .row .pm{grid-column:2;grid-row:1/3}
+ .two{grid-template-columns:1fr}
+ .tile:nth-child(even){margin-top:0;margin-bottom:0}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *{animation:none!important;transition:none!important}
+ .tail{opacity:1}
+}
+</style><link rel="icon" type="image/svg+xml" href="favicon.svg"></head><body>
+
+<nav id="nav"><a class="lg" href="#top">Maison Adjoua</a><a href="#styles">Styles</a><a href="#prestations">Prestations</a><a href="#equipe">L'équipe</a><a href="#infos">Infos</a><a class="bt so sm" href="#resa">Réserver</a></nav>
+
+<header class="hero" id="top">
+ <div class="tx">
+  <p class="st" id="st"><i></i><span>Horaires en cours de chargement</span></p>
+  <h1>Vos cheveux, entre de bonnes mains.</h1>
+  <p class="lead">Tresses, tissages, soins, ongles et maquillage à Cocody. Choisissez vos prestations, nous calculons le prix et la durée.</p>
+  <div class="ac"><a class="bt so" href="#prestations">Composer ma réservation</a><a class="bt ol" href="#styles">Voir les styles</a></div>
+ </div>
+ <svg class="hb" viewBox="0 0 300 880" aria-hidden="true"><g id="sway"></g></svg>
+</header>
+
+<section id="styles"><div class="wrap">
+ <h2>Les styles les plus demandés</h2>
+ <p class="sub">Touchez un style pour l'ajouter à votre réservation. Vous pouvez le retirer à tout moment.</p>
+ <div class="tiles" id="tiles"></div>
+</div></section>
+
+<section id="prestations" style="padding-top:40px"><div class="wrap">
+ <h2>Nos prestations</h2>
+ <p class="sub">Les prix sont en FCFA et comprennent le shampoing. La durée est une moyenne, elle varie avec la longueur et l'épaisseur des cheveux.</p>
+ <div class="rs">
+  <div id="list"></div>
+  <aside id="panel" aria-labelledby="ph">
+   <h3 id="ph">Votre réservation</h3>
+   <p id="emp">Aucune prestation choisie. Ajoutez-en dans la liste.</p>
+   <ul id="sel"></ul>
+   <div class="tot" aria-live="polite"><b id="tt">0 <small>FCFA</small></b><span id="td">Durée : 0 min</span></div>
+   <form id="resa" novalidate>
+    <div class="two">
+     <div class="fd"><label for="dt">Date</label><input type="date" id="dt" required></div>
+     <div class="fd"><label for="hm">Heure d'arrivée</label><select id="hm" required disabled><option value="">Heure</option></select></div>
+    </div>
+    <div class="fd"><label for="nm">Votre prénom</label><input id="nm" autocomplete="given-name" maxlength="40" required></div>
+    <div class="fd"><label for="nt">Précisions (facultatif)</label><textarea id="nt" maxlength="300" placeholder="Longueur souhaitée, couleur des mèches, allergie…"></textarea></div>
+    <p id="err" role="alert"></p>
+    <button class="bt wa" type="submit" data-m="wa">Réserver sur WhatsApp</button>
+    <button class="bt ol" type="submit" data-m="ml">Envoyer par e-mail</button>
+   </form>
+  </aside>
+ </div>
+</div></section>
+
+<section id="equipe" class="dk"><div class="wrap">
+ <h2>Trois spécialistes, un seul salon</h2>
+ <p class="sub">Vous êtes toujours coiffée par la personne qui connaît le mieux votre type de cheveux.</p>
+ <div class="eq">
+  <div class="mem"><div class="mono" style="background:var(--hi);color:#fff">A</div><div><h3>Adjoua</h3><small>Fondatrice</small><p>Tresses, tissages et perruques. Elle dessine chaque motif de nattes à la main.</p></div></div>
+  <div class="mem"><div class="mono" style="background:var(--so)">M</div><div><h3>Mariam</h3><small>Soins et beauté</small><p>Soins, brushing, ongles et maquillage de soirée ou de mariage.</p></div></div>
+  <div class="mem"><div class="mono" style="background:var(--me)">K</div><div><h3>Kevin</h3><small>Barbier</small><p>Coupes hommes, dégradés et tailles de barbe, sur rendez-vous ou sans.</p></div></div>
+ </div>
+</div></section>
+
+<section id="infos"><div class="wrap inf">
+ <div>
+  <h2>Horaires</h2>
+  <table class="hr" id="hr"></table>
+ </div>
+ <div>
+  <h2>Nous trouver</h2>
+  <div class="ad"><p><b>Maison Adjoua</b></p><p>Rue des Jardins, Cocody Deux-Plateaux</p><p>Abidjan, Côte d'Ivoire</p></div>
+  <p class="sub" style="margin-bottom:0">Sans rendez-vous, nous vous prenons dès qu'une place se libère. Pour les tresses longues, réservez : la journée se remplit vite.</p>
+  <div class="ctl"><a class="bt wa" href="https://wa.me/2250758167537?text=Bonjour%20Maison%20Adjoua" target="_blank" rel="noopener">Écrire sur WhatsApp</a><a class="bt ol" href="tel:+2250758167537">Appeler</a><a class="bt ol" href="https://www.google.com/maps/search/?api=1&query=Cocody+Deux-Plateaux+Abidjan" target="_blank" rel="noopener">Itinéraire</a></div>
+ </div>
+</div></section>
+
+<footer>© 2026 Maison Adjoua, Abidjan. Démo réalisée par <a href="../">Junior Gnezale</a></footer><div class="jg-credit" style="background:#0b0b0bf2;color:#e9e9e9;text-align:center;font:12.5px/1.6 system-ui,Arial,sans-serif;padding:14px 5vw;border-top:1px solid #ffffff22;position:relative;z-index:5">© 2026 — Site conçu et développé par <a href="../" style="color:inherit;font-weight:700;text-decoration:underline">Junior Gnezale</a>. Tous droits réservés.</div>
+
+<div id="mb"><div><b id="mbt">0 FCFA</b><span id="mbn">0 prestation</span></div><a class="bt so sm" href="#panel">Réserver</a></div>
+
+<script>
+const WA='2250758167537',MAIL='gnezalejunior01@gmail.com';
+const $=s=>document.querySelector(s);
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const nf=n=>n.toLocaleString('fr-FR');
+
+/* ---------- Données ---------- */
+const CATS=[['tresses','Tresses'],['tissages','Tissages et perruques'],['soins','Soins et brushing'],['ongles','Ongles et maquillage'],['hommes','Hommes']];
+const S=[
+ {id:'box',c:'tresses',n:'Box braids',d:'Tresses classiques, toutes longueurs',m:270,p:25000},
+ {id:'knotless',c:'tresses',n:'Knotless braids',d:'Sans nœud, plus légères sur le cuir chevelu',m:300,p:35000},
+ {id:'nattes',c:'tresses',n:'Nattes collées',d:'Motifs au choix, base des coiffures protectrices',m:90,p:10000},
+ {id:'vanilles',c:'tresses',n:'Vanilles',d:'Twists torsadés, avec ou sans rajouts',m:180,p:20000},
+ {id:'tissage',c:'tissages',n:'Pose de tissage',d:'Mèches cousues, finition naturelle',m:120,p:15000},
+ {id:'perruque',c:'tissages',n:'Pose et coiffage de perruque',d:'Ajustement, découpe et mise en forme',m:90,p:12000},
+ {id:'frontal',c:'tissages',n:'Closure ou frontal',d:'Pose invisible, raie et ligne naturelles',m:150,p:20000},
+ {id:'soin',c:'soins',n:'Shampoing et soin hydratant',d:'Pour cheveux secs ou après une coiffure longue',m:60,p:8000},
+ {id:'proteine',c:'soins',n:'Soin protéiné',d:'Pour cheveux cassants ou abîmés',m:90,p:15000},
+ {id:'brushing',c:'soins',n:'Brushing',d:'Lissage à la chaleur, finition brillante',m:45,p:5000},
+ {id:'vernis',c:'ongles',n:'Vernis semi-permanent',d:'Tient jusqu\'à trois semaines',m:60,p:7000},
+ {id:'gel',c:'ongles',n:'Pose gel',d:'Mains ou pieds, forme et couleur au choix',m:120,p:20000},
+ {id:'maqsoir',c:'ongles',n:'Maquillage soirée',d:'Teint, yeux et lèvres',m:60,p:15000},
+ {id:'maqmar',c:'ongles',n:'Maquillage mariée',d:'Tenue toute la journée, retouches comprises',m:120,p:50000},
+ {id:'coupe',c:'hommes',n:'Coupe homme',d:'Ciseaux ou tondeuse, dégradé au choix',m:30,p:3000},
+ {id:'barbe',c:'hommes',n:'Taille de barbe',d:'Contours et finition au rasoir',m:20,p:2000}
+];
+const byId=Object.fromEntries(S.map(s=>[s.id,s]));
+const H={0:[10,16],1:null,2:[8,19],3:[8,19],4:[8,19],5:[8,19],6:[7,20]};
+const JR=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+const hh=h=>h+' h';
+const dur=m=>{const h=Math.floor(m/60),r=m%60;return h?(r?`${h} h ${String(r).padStart(2,'0')}`:`${h} h`):`${r} min`};
+const clock=m=>`${Math.floor(m/60)} h ${String(m%60).padStart(2,'0')}`;
+
+/* ---------- Tresse (dessin SVG) ---------- */
+function braid(cx,y0,n,w,h,fills,st,sw,taper,anim){
+ let s='';
+ for(let i=0;i<n*2;i++){
+  const side=i%2?1:-1,k=taper?1-.45*(i/(n*2)):1,ww=w*k;
+  const x=cx+side*ww*.13,y=y0+i*h*.5;
+  s+=`<g transform="rotate(${side*38} ${x} ${y})"><ellipse${anim?` class="bl" style="--i:${i}"`:''} cx="${x}" cy="${y}" rx="${ww*.2}" ry="${h*.82}" fill="${fills[i%fills.length]}" stroke="${st}" stroke-width="${sw}"/></g>`;
+ }
+ return s;
+}
+/* Tresse de l'accueil */
+(function(){
+ const g=$('#sway'),n=15,w=230,h=44,y0=50,endY=y0+n*h;
+ g.innerHTML=braid(150,y0,n,w,h,['#d4195a','#ffc83d','#efe3f7'],'#2a0f3a',3.5,true,true)
+  +`<rect class="bl" style="--i:-2" x="92" y="14" width="116" height="38" rx="19" fill="#ffc83d" stroke="#2a0f3a" stroke-width="3.5"/><rect class="bl" style="--i:-1" x="104" y="22" width="92" height="8" rx="4" fill="#2a0f3a" opacity=".25"/>`
+  +`<g class="tail"><ellipse cx="150" cy="${endY+4}" rx="30" ry="11" fill="#ffc83d" stroke="#2a0f3a" stroke-width="3.5"/>`
+  +`<path d="M130 ${endY+14} q-14 36 -6 72 M150 ${endY+14} q0 44 4 86 M170 ${endY+14} q14 36 8 66" stroke="#efe3f7" stroke-width="7" stroke-linecap="round" fill="none"/></g>`;
+ if(reduce)return;
+ let ang=0,tgt=0,t0=performance.now();
+ addEventListener('pointermove',e=>{tgt=(e.clientX/innerWidth-.5)*9});
+ (function loop(t){
+  const idle=Math.sin((t-t0)/1700)*1.3;
+  ang+=(tgt+idle-ang)*.05;
+  g.setAttribute('transform',`rotate(${ang.toFixed(2)} 150 24)`);
+  requestAnimationFrame(loop);
+ })(t0);
+})();
+
+/* ---------- Motifs des tuiles ---------- */
+const TILES=[
+ {id:'box',bg:'#f9c9d9',art:b=>[34,80,126].map(x=>braid(x,20,6,44,24,['#2a0f3a','#d4195a','#2a0f3a'],b,1.6,false)).join('')},
+ {id:'knotless',bg:'#ffe39a',art:b=>braid(80,20,4,96,38,['#d4195a','#2a0f3a','#ffc83d'],b,2.5,false)},
+ {id:'nattes',bg:'#bfe9df',art:b=>[22,48,74,100,126].map((x,i)=>`<path d="M${x} 0 C${x+22} 50 ${x-22} 110 ${x} 160" stroke="#2a0f3a" stroke-width="9" stroke-linecap="round" fill="none"/><path d="M${x+13} 0 C${x+35} 50 ${x-9} 110 ${x+13} 160" stroke="#2a0f3a55" stroke-width="2" fill="none"/>`).join('')},
+ {id:'vanilles',bg:'#d6bdec',art:b=>[30,80,130].map(x=>`<path d="M${x} 6 q14 14 0 28 t0 28 t0 28 t0 28 t0 28" stroke="#2a0f3a" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M${x} 6 q-14 14 0 28 t0 28 t0 28 t0 28 t0 28" stroke="#d4195a" stroke-width="9" fill="none" stroke-linecap="round" stroke-dasharray="22 8"/>`).join('')},
+ {id:'tissage',bg:'#2a0f3a',lt:true,art:b=>[0,1,2,3,4,5,6].map(i=>`<path d="M-10 ${22+i*20} q35 -26 70 0 t70 0 t70 0" stroke="${i%3==1?'#ffc83d':'#efe3f7'}" stroke-width="${i%3==1?4:7}" fill="none" stroke-linecap="round" opacity="${i%3==1?1:.85}"/>`).join('')}
+];
+$('#tiles').innerHTML=TILES.map(t=>{const s=byId[t.id];
+ return `<button class="tile${t.lt?' lt2':''}" data-id="${t.id}" aria-pressed="false" style="--bg:${t.bg}"><svg viewBox="0 0 160 160" aria-hidden="true"><rect width="160" height="160" fill="${t.bg}" opacity="0"/>${t.art(t.bg)}</svg><span class="tn">${s.n}</span><span class="tp">${nf(s.p)} FCFA</span><span class="ta">Ajouter</span></button>`}).join('');
+
+/* ---------- Liste des prestations ---------- */
+$('#list').innerHTML=CATS.map(([k,l])=>`<div class="cat"><h3>${l}</h3><ul>${S.filter(s=>s.c===k).map(s=>
+ `<li><button class="row" data-id="${s.id}" aria-pressed="false"><span><span class="nm">${s.n}</span><span class="ds">${s.d}</span></span><span class="pz"><b>${nf(s.p)} FCFA</b><small>${dur(s.m)}</small></span><span class="pm" aria-hidden="true">+</span></button></li>`).join('')}</ul></div>`).join('');
+
+/* ---------- État et affichage ---------- */
+const sel=new Set();
+let shown=0,tween;
+function setTotal(to){
+ const el=$('#tt'),put=v=>el.innerHTML=`${nf(Math.round(v))} <small>FCFA</small>`;
+ cancelAnimationFrame(tween);
+ if(reduce){shown=to;put(to);return}
+ const from=shown,t0=performance.now();
+ (function f(t){const k=Math.min(1,(t-t0)/350),e=1-Math.pow(1-k,3);shown=from+(to-from)*e;put(shown);if(k<1)tween=requestAnimationFrame(f);else{shown=to;put(to)}})(t0);
+}
+function render(){
+ const items=[...sel].map(id=>byId[id]);
+ const total=items.reduce((a,s)=>a+s.p,0),mins=items.reduce((a,s)=>a+s.m,0);
+ document.querySelectorAll('[data-id]').forEach(b=>{
+  const on=sel.has(b.dataset.id);b.setAttribute('aria-pressed',on);
+  if(b.classList.contains('row'))b.querySelector('.pm').textContent=on?'✓':'+';
+  if(b.classList.contains('tile'))b.querySelector('.ta').textContent=on?'Ajouté':'Ajouter';
+ });
+ $('#emp').hidden=items.length>0;
+ $('#sel').innerHTML=items.map(s=>`<li><span>${s.n}</span><em>${nf(s.p)} FCFA</em><button type="button" data-rm="${s.id}" aria-label="Retirer ${s.n}">×</button></li>`).join('');
+ setTotal(total);
+ const nb=t=>t.replace(/ /g,'\u00a0');
+ $('#td').innerHTML=items.length?nb(`Durée : ${dur(mins)}`)+(+$('#hm').value?'<br>'+nb(`Fin vers ${clock(+$('#hm').value+mins)}`):''):'Durée : 0 min';
+ $('#mbt').textContent=nf(total)+' FCFA';
+ $('#mbn').textContent=`${items.length} prestation${items.length>1?'s':''}, ${dur(mins)}`;
+ document.body.classList.toggle('hasbar',items.length>0);
+ mbShow();
+ buildSlots();
+}
+document.addEventListener('click',e=>{
+ const b=e.target.closest('[data-id]'),r=e.target.closest('[data-rm]');
+ if(b){const id=b.dataset.id;sel.has(id)?sel.delete(id):sel.add(id);render()}
+ if(r){sel.delete(r.dataset.rm);render()}
+});
+
+/* ---------- Date et créneaux ---------- */
+const today=new Date().toISOString().slice(0,10);
+$('#dt').min=today;
+function buildSlots(){
+ const hm=$('#hm'),v=$('#dt').value,keep=hm.value;
+ const mins=[...sel].reduce((a,id)=>a+byId[id].m,0);
+ const msg=t=>{hm.innerHTML=`<option value="">${t}</option>`;hm.disabled=true};
+ if(!v)return msg('Heure');
+ const d=new Date(v+'T00:00:00Z').getUTCDay(),h=H[d];
+ if(!h){hm.dataset.note=`Le salon est fermé le ${JR[d]}. Choisissez un autre jour.`;return msg('Fermé')}
+ if(!mins){hm.dataset.note='Choisissez d\'abord une prestation dans la liste.';return msg('Heure')}
+ const now=new Date(),nowM=now.getUTCHours()*60+now.getUTCMinutes();
+ const list=[];
+ for(let m=h[0]*60;m+mins<=h[1]*60;m+=30){if(v===today&&m<nowM+30)continue;list.push(m)}
+ if(!list.length){hm.dataset.note='Plus de créneau assez long ce jour-là. Choisissez un autre jour ou retirez une prestation.';return msg('Complet')}
+ hm.dataset.note='';
+ hm.disabled=false;
+ hm.innerHTML='<option value="">Choisir</option>'+list.map(m=>`<option value="${m}">${clock(m)}</option>`).join('');
+ if(list.includes(+keep))hm.value=keep;
+}
+$('#hm').addEventListener('change',render);
+$('#dt').addEventListener('change',()=>{buildSlots();render();const n=$('#hm').dataset.note;$('#err').textContent=n||''});
+
+/* ---------- Envoi ---------- */
+function message(){
+ const items=[...sel].map(id=>byId[id]);
+ const total=items.reduce((a,s)=>a+s.p,0),mins=items.reduce((a,s)=>a+s.m,0);
+ const day=new Date($('#dt').value+'T00:00:00Z').toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
+ const note=$('#nt').value.trim();
+ return `Bonjour Maison Adjoua, je souhaite réserver :\n`+items.map(s=>`- ${s.n} (${dur(s.m)}) : ${nf(s.p)} FCFA`).join('\n')
+  +`\n\nTotal : ${nf(total)} FCFA, durée ${dur(mins)}\nDate : ${day} à ${clock(+$('#hm').value)}\nPrénom : ${$('#nm').value.trim()}`+(note?`\nPrécisions : ${note}`:'')+`\n\nMerci de me confirmer le créneau.`;
+}
+$('#resa').addEventListener('submit',e=>{
+ e.preventDefault();
+ const err=$('#err');
+ if(!sel.size)return err.textContent='Choisissez au moins une prestation dans la liste.';
+ if(!$('#dt').value)return err.textContent='Choisissez une date.',$('#dt').focus();
+ if($('#hm').disabled||!$('#hm').value)return err.textContent=$('#hm').dataset.note||'Choisissez une heure d\'arrivée.',$('#hm').focus();
+ if(!$('#nm').value.trim())return err.textContent='Indiquez votre prénom.',$('#nm').focus();
+ err.textContent='';
+ const m=message();
+ if(e.submitter&&e.submitter.dataset.m==='ml')location.href=`mailto:${MAIL}?subject=${encodeURIComponent('Réservation Maison Adjoua — '+$('#nm').value.trim())}&body=${encodeURIComponent(m)}`;
+ else window.open(`https://wa.me/${WA}?text=${encodeURIComponent(m)}`,'_blank','noopener');
+});
+
+/* ---------- Horaires, statut, navigation ---------- */
+(function(){
+ const n=new Date(),d=n.getUTCDay(),t=n.getUTCHours()+n.getUTCMinutes()/60,h=H[d];
+ let txt,open=false;
+ if(h&&t>=h[0]&&t<h[1]){open=true;txt=`Ouvert jusqu'à ${hh(h[1])}`}
+ else for(let k=0;k<8;k++){
+  const dd=(d+k)%7,hr=H[dd];if(!hr)continue;
+  if(k===0&&t>=hr[1])continue;
+  txt=`Fermé, ouvre ${k===0?'aujourd\'hui':k===1?'demain':JR[dd]} à ${hh(hr[0])}`;break;
+ }
+ const st=$('#st');st.classList.toggle('cl',!open);st.querySelector('span').textContent=txt;
+ const ord=[2,3,4,5,6,0,1],names=['Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche','Lundi'];
+ $('#hr').innerHTML=ord.map((k,i)=>`<tr class="${k===d?'today':''}${H[k]?'':' off'}"><td>${names[i]}</td><td>${H[k]?`${hh(H[k][0])} à ${hh(H[k][1])}`:'Fermé'}</td></tr>`).join('');
+})();
+const nav=$('#nav');
+addEventListener('scroll',()=>nav.classList.toggle('lt',scrollY>innerHeight*.8),{passive:true});
+nav.classList.toggle('lt',scrollY>innerHeight*.8);
+let panelSeen=false;
+function mbShow(){$('#mb').classList.toggle('on',sel.size>0&&!panelSeen)}
+new IntersectionObserver(es=>{panelSeen=es[0].isIntersecting;mbShow()},{threshold:.25}).observe($('#panel'));
+render();
+</script>
+</body></html>
